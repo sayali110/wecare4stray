@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inform</title>
+    <style>
+        body{
+            background-image: url(img/img1.jpg); 
+            
+         }
+        .main{
+            border-radius: 20px;
+            width: 350px;
+            position: absolute;
+            padding: 40px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #130505;
+            text-align: center;
+        }
+        .main h1{
+            color: rgb(30, 174, 218);
+            text-transform: uppercase;
+            font-weight: 1500;
+
+        }
+        .main input[type="text"]{
+            border:0;
+            background: none;
+           /* display: block; */
+            margin: auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            /* padding: 10px 5px; ..........*/
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+        }
+        .main input[type="text"]:focus{
+            width: 280px;
+            border-color: #16b458 ;
+            
+        }
+        /* .main label[for="gender"]{
+            color:white;
+        } */
+        .main button{
+                border:0;
+                background: none;
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+                border: 2px solid  #2ecc71;
+                padding: 10px 15px;
+                outline: none;
+                color: white;
+                border-radius: 24px;
+                transition: 0.25s;
+                cursor: pointer;
+        } 
+        .main button:hover{
+           background:#2ecc71;
+        }
+    </style>
+</head>
+<body>
+    <form class="main" action="index.html">
+        <h1>Inform Us</h1>
+      
+        <input type="text" name="txttype_of_animal" placeholder="Type of animal"><br><br>
+        <input type="text" name="txtcolor" placeholder="Color"><br><br>
+        <!-- <p>gender</p><input type="checkbox" name="" value="gender">
+        <label for="gender" >Male</label>
+        <input type="checkbox" name="" value="gender">
+        <label for="gender">Female</label>
+        <br><br> -->
+        <input type="text" name="txtgender" placeholder="Gender"><br><br>
+        <input type="text" name="txtdisease" placeholder="Disease"><br><br>
+        <input type="text" name="txtlocation" placeholder="Location"><br><br>
+        <input type="text" name="txtstatus" placeholder="Status"><br><br>
+        <!-- <input type="submit" name="" value="Submit"> -->
+        <!-- <form method="POST" action="inform_us.php">
+
+        </form> -->
+        
+            <button onclick="submit()">Submit</button>
+            <!-- <script>
+                function submit() {
+                    alert("Your information save succesfully!");
+                }
+                </script> -->
+                
+                </form>
+               
+    
+</body>
+</html>
