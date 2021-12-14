@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+    width: 100%;
+    height: 80px;
+    background-color: #0007;
+}
+nav ul{
+    float:right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 15px;
+    
+
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    /* border: 1px solid rgb(14, 11, 11) ; */
+    transition: o.6s ease;
+    border-radius: 8px;
+}
+nav ul li a:hover{
+    background-color: rgb(55, 38, 156);
+    color: rgb(238, 229, 229);
+}
+ul li.active a{
+    background-color: rgb(230, 218, 218);
+    color:green;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: 90px;
+    width: 190px;
+}
+
+.main{
+    max-width: 12000px;
+    margin:auto;
+    
+}
+.sub-menu{
+    display: none;
+    width: 50px;
+    height: 60px;
+}
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: #0007;
+    height: 100px;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: -5px;
+    margin-right: 250px;
+    border-radius: 8px;
+    
+}
+.main ul li:hover .sub-menu ul {
+    display: block;
+    margin: 10px;
+}
+.main ul li:hover .sub-menu ul li a{
+    width: 400px;
+    padding: 1px;
+    background:transparent;
+    border-radius: 0px;
+    text-align: center;
+}
+.sub-menu ul li a:hover{
+    color:rgb(71, 39, 211)
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <nav>
+            
+            <div class="logo">
+                <img src="img/WECARE4STRAY.png">
+            </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Login</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="a_login.php">Admin </a></li>
+                            <li><a href="u_login.php">User </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

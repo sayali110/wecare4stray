@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Our Team Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+       
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  /* background-image: linear-gradient(rgb(46, 172, 223) ,pink); */
+  background-image: url(img/img17.jpg);
+  /* background-color: #81c644; */
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper{
+  margin-top: 8%;
+}
+
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+/* text */
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #616060; 
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #81c644;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: rgb(51, 51, 51);
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -70px;
+  left: 47%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+ 
+}
+
+.team .team_member .team_img img{
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+</style>
+</head>
+<body>
+    
+        
+        <div class="wrapper">
+            <h1>Our Team</h1>
+            <div class="team">
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="img/img13.jpg" alt="Team_image">
+                    </div>
+                    <h3>Sayali Kotkar</h3>
+                    <p class="role">Developer</p>
+                    <p>Researching, designing, implementing and managing software programs. Testing and evaluating new programs. Identifying areas for modification in existing programs and subsequently developing these modifications. Writing and implementing efficient code.</p>
+                </div>
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="img/img14.jpg">
+                    </div>
+                    <h3>Abhinav Jindal</h3>
+                    <p class="role">Tester</p>
+                    <p>Software Testers are responsible for the quality of software development and deployment. They are involved in performing automated and manual tests to ensure the software created by developers is fit for purpose. Some of the duties include analysis of software, and systems, mitigate risk and prevent software issues.</p></div>
+                    <div class="team_member">
+                        <div class="team_img">
+                            <img src="img/img15.jpg" alt="Team_image">
+                        </div>
+                        <h3>Aakash Gupta</h3>
+                        <p class="role">Support Lead</p>
+                        <p>Manage the day-to-day project activities and resources and chairs the project management team meetings. Monitor staff performance and complete performance reviews. Provide status reporting regarding project milestones, deliverable, dependencies, risks and issues, communicating across leadership.</p>
+                    </div>
+                </div>
+            </div>	
+            
+       
+        </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cows Options</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* a, a:hover{
+    text-decoration: none;
+} */
+
+body{
+    /* background-image: url(img/img23.jpg); */
+    background-color: rgba(124, 140, 235, 0.4);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+   
+  
+}
+
+.container{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    height: 350px;
+    width: 300px;
+    cursor: pointer;
+    box-shadow: -1rem 0 3rem #000;
+    margin: left;
+    position: relative; 
+    left: 0px;
+    border-radius: 5px;
+    transition: ease-out;
+    /* background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(6,123,239,1) 14.2%, rgba(219, 115, 249, 1)89.5%); */
+}
+#c1{
+    background-color: rgba(238, 215, 10, 0.4);
+}
+#c2{
+    background-color: rgba(243, 12, 185, 0.4);
+}
+#c3{
+    background-color: rgba(88, 238, 18, 0.4);
+}
+#c4{
+    background-color: rgba(153, 12, 235, 0.4);
+}
+.card: :not(:first-child){
+    margin-left: -80px;
+
+}
+
+
+
+.title{
+    color:#fff;
+    font-size: 30px;
+    font-weight: 300;
+    position: absolute;
+    left: 100px;
+    top: 25px;
+    display: center;
+
+}
+
+
+
+
+.detail{
+    width: 100%;
+    position: sticky;
+   
+}
+.detail img{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    top: 50px;
+    left: 90px;
+    border-radius: 50%;
+
+}
+
+.detail .name{
+
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top : 210px;
+    Left : 130px;
+    color :#fff;
+}
+
+.detail .post{
+    position: absolute;
+    top: 230px;
+    left: 120px;
+    color : #fff;
+    font-size: 14px; 
+}
+
+.detail .post-description{
+    position: relative;
+    top: 250px;
+    left: 60px;
+    color: #fff;
+    font-size: 12px;
+    padding-right : 60px;
+}
+
+.detail .button{
+    font-size: 12px;
+    padding: 5px 0px;
+    position: absolute;
+    top: 300px; 
+    Left:100px;
+    width: 135px;
+    border: 1px solid #eef13b;
+    color: #040404;
+    text-align: center; 
+    border-radius: 20%;
+    background-color: paleturquoise;
+}
+
+
+</style>
+
+
+
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card" id="c1">
+            <h3 class = "title"> </h3>
+           
+        <div class="detail">
+            <img src="img/red_sindhi.png" alt=" image">
+            <h2 class="name">Cow_01</h2>
+            <h3 class="post">Red Sindhi</h3>
+            <p class="post-description">Milk yield ranges from 1100-2600 kgs.</p>
+            <a href="adoptform.php" class="button">Click here to Adopt</a>
+        </div>
+          </div>
+        
+        <div class="card" id="c2">
+            <h3 class = "title"></h3>
+            
+        <div class="detail">
+            <img src="img/Sahiwal.jpg" alt="image">
+            <h2 class="name">Cow_02</h2>
+            <h3 class="post">Sahiwal</h3>
+            <p class="post-description">Average milk yield is between 2,725 and 3,175 kgs</p>
+            <a href="adoptform.php" class="button">Click here to Adopt</a>
+        </div>
+</div>
+        <div class="card" id="c3">
+            <h3 class = "title"></h3>
+           
+        <div class="detail">
+            <img src="img/deoni.png" alt="image">
+            <h2 class="name">Cow_03</h2>
+            <h3 class="post">Deoni</h3>
+            <p class="post-description">Milk yield ranges from 636 to 1230 kgs with an average of 940 days</p>
+            <a href="adoptform.php" class="button">Click here to Adopt</a>
+        </div> 
+        </div>
+        <div class="card" id="c4">
+         <h3 class = "title"></h3>
+            
+        <div class="detail">
+            <img src="img/kankrej.png" alt=" image">
+            <h2 class="name">Cow_04</h2>
+            <h3 class="post">Kankrej</h3>
+            <p class="post-description">The cows are good milkers, yielding about 1360 kgs.
+            </p>
+            <a href="adoptform.php" class="button">Click here to Adopt</a>
+        </div>
+</div>
+</div>
+
+
+
+        
+</body>
+</html>
